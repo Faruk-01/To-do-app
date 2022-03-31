@@ -1,0 +1,143 @@
+@import "__variable";
+@mixin border($size: 1px, $color: red, $radius: 0px) {
+  border: $size solid $color;
+  border-radius: $radius;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+  margin: 0.5rem auto;
+  @include border(5px, yellow, 0.1rem);
+  position: relative;
+  background-color: pink;
+  h1 {
+    margin: 1rem 0 1rem 0;
+    font-family: $h1_font;
+    font-size: $h1_font_size;
+    text-align: center;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    width: 30vw;
+    input {
+      height: 35px;
+      font-family: $h1_font;
+      font-size: 1.1rem;
+      width: 85%;
+    }
+    button {
+      margin-left: 5px;
+      outline: none;
+      padding: 2px;
+      width: 15%;
+      text-align: center;
+      height: 35px;
+      background-color: #06f;
+      border: 2px solid #06f;
+      color: #fff;
+      cursor: pointer;
+      fill: #000;
+      font-family: Inter, sans-serif;
+      font-size: 5px;
+      font-weight: 600;
+      outline: 0;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.3s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      border-radius: 3px;
+      &:hover {
+        background-color: #3385ff;
+        border-color: #3385ff;
+        fill: #06f;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    @include border(4px, red, 1rem);
+    height: 95vh;
+    width: 45vw;
+    margin: 10px 0;
+    overflow: auto;
+    background-color: white;
+    .p {
+      margin: 0.2rem 0.2rem 0.2rem 4rem;
+      list-style-type: decimal;
+      font-family: $h1_font;
+      font-size: 1.5em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+      text-align: center;
+      
+      &:hover{
+        background-color: rgb(213, 204, 204);
+        opacity: 0.8;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        padding: 0.4rem 0.4rem;
+      }
+    }
+  }
+  .plus {
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: -3.5rem;
+
+    &:hover {
+      @include border(2px, gray, 50%);
+      background-color: gray;
+      transform: scale(0.85);
+      cursor: pointer;
+      .one {
+        @include border(1.4px, black, 0);
+        background-color: black;
+        opacity: 1;
+      }
+    }
+    .one {
+      @include border(1.4px, gray, 0);
+      height: 0rem;
+      width: 2.2rem;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 50%;
+      top: auto;
+      right: 0px;
+      left: 0px;
+      background-color: gray;
+      opacity: 0.7;
+    }
+    .two {
+      @extend .one;
+      transform: rotate(90deg);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import 'style';
+// breakpoints
+
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1279px;
+$desktop: 1280px;
+
+
+// Mobile
+@media screen and (max-width: $mobile) {
+    .container{
+
+        h1{
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+// Tablet
+@media screen and (max-width: $tablet) {
+    
+}
+
+// Laptop
+@media screen and (max-width: $laptop) {
+    
+}
+
+// Desktop
+@media screen and (max-width: $desktop) {
+    
+}

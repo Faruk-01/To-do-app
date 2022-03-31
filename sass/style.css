@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans:wght@700&family=Lato:wght@700&family=Open+Sans:wght@500&family=Poppins:wght@400;700&family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 50vw;
+  margin: 0.5rem auto;
+  border: 5px solid yellow;
+  border-radius: 0.1rem;
+  position: relative;
+  background-color: pink;
+}
+
+.container h1 {
+  margin: 1rem 0 1rem 0;
+  font-family: "Lato", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.container .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  width: 30vw;
+}
+
+.container .inputs input {
+  height: 35px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  width: 85%;
+}
+
+.container .inputs button {
+  margin-left: 5px;
+  outline: none;
+  padding: 2px;
+  width: 15%;
+  text-align: center;
+  height: 35px;
+  background-color: #06f;
+  border: 2px solid #06f;
+  color: #fff;
+  cursor: pointer;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 5px;
+  font-weight: 600;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  border-radius: 3px;
+}
+
+.container .inputs button:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+.container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 4px solid red;
+  border-radius: 1rem;
+  height: 95vh;
+  width: 45vw;
+  margin: 10px 0;
+  overflow: auto;
+  background-color: white;
+}
+
+.container ul .p {
+  margin: 0.2rem 0.2rem 0.2rem 4rem;
+  list-style-type: decimal;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.container ul .p:hover {
+  background-color: #d5cccc;
+  opacity: 0.8;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.4rem;
+}
+
+.container .plus {
+  height: 3rem;
+  width: 3rem;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  right: -3.5rem;
+}
+
+.container .plus:hover {
+  border: 2px solid gray;
+  border-radius: 50%;
+  background-color: gray;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  cursor: pointer;
+}
+
+.container .plus:hover .one, .container .plus:hover .two {
+  border: 1.4px solid black;
+  border-radius: 0;
+  background-color: black;
+  opacity: 1;
+}
+
+.container .plus .one, .container .plus .two {
+  border: 1.4px solid gray;
+  border-radius: 0;
+  height: 0rem;
+  width: 2.2rem;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 50%;
+  top: auto;
+  right: 0px;
+  left: 0px;
+  background-color: gray;
+  opacity: 0.7;
+}
+
+.container .plus .two {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/*# sourceMappingURL=style.css.map */
