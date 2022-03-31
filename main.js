@@ -1,9 +1,10 @@
+alert('Press The Plus Button Or Enter To Write Your Task');
 const plus = document.querySelector(".plus");
 const inputs = document.querySelector(".inputs");
 const input = document.querySelector("input");
 const btn = document.getElementById("btn");
 const list = document.querySelector("ul");
-const reset = document.getElementById('reset');
+const reset = document.getElementById("reset");
 
 plus.addEventListener("click", () => {
   plus.style.transform = "scale(0.8)";
@@ -13,6 +14,18 @@ plus.addEventListener("click", () => {
   setInterval(function () {
     plus.style.transform = "scale(1)";
   }, 450);
+});
+
+document.addEventListener("keyup", (e) => {
+  if (e.keyCode === 13) {
+    plus.style.transform = "scale(0.8)";
+    inputs.style.transform = "scale(1)";
+    input.focus();
+    //bouncing buttons
+    setInterval(function () {
+      plus.style.transform = "scale(1)";
+    }, 450);
+  }
 });
 
 // Creating element onclick btn
@@ -49,10 +62,10 @@ btn.addEventListener("click", (e) => {
 
     input.value = "";
 
-    reset.addEventListener('click', (e) => {
+    reset.addEventListener("click", (e) => {
       list.removeChild(sublist);
       reset.style.transform = "scale(0.85)";
-    })
+    });
 
     setInterval(function () {
       btn.style.transform = "scale(1)";
@@ -93,11 +106,11 @@ input.addEventListener("keyup", (e) => {
 
       input.value = "";
 
-      reset.addEventListener('click', (e) => {
+      reset.addEventListener("click", (e) => {
         list.removeChild(sublist);
         reset.style.transform = "scale(0.85)";
-      })
-  
+      });
+
       setInterval(function () {
         btn.style.transform = "scale(1)";
         reset.style.transform = "scale(1)";
