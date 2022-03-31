@@ -8,13 +8,11 @@ plus.addEventListener("click", () => {
   plus.style.transform = "scale(0.8)";
   inputs.style.transform = "scale(1)";
   input.focus();
+  //bouncing buttons
+  setInterval(function () {
+    plus.style.transform = "scale(1)";
+  }, 450);
 });
-
-//bouncing buttons
-setInterval(function () {
-  plus.style.transform = "scale(1)";
-  btn.style.transform = "scale(1)";
-}, 450);
 
 // Creating element onclick btn
 btn.addEventListener("click", (e) => {
@@ -24,6 +22,9 @@ btn.addEventListener("click", (e) => {
     alert("Please Write Something: ");
   } else {
     // btn style
+
+    //bouncing buttons
+
     btn.style.transform = "scale(0.85)";
 
     // Creating virtual elements
@@ -47,9 +48,9 @@ btn.addEventListener("click", (e) => {
 
     input.value = "";
 
-    document.getElementById("reset").addEventListener("click", (e) => {
-      list.removeChild(sublist);
-    });
+    setInterval(function () {
+      btn.style.transform = "scale(1)";
+    }, 450);
   }
 });
 
@@ -85,9 +86,9 @@ input.addEventListener("keyup", (e) => {
 
       input.value = "";
 
-      document.getElementById("reset").addEventListener("click", (e) => {
-        list.removeChild(sublist);
-      });
+      setInterval(function () {
+        btn.style.transform = "scale(1)";
+      }, 450);
     }
   }
 });

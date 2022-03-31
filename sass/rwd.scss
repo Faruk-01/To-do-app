@@ -40,6 +40,7 @@ $desktop: 1280px;
 @media screen and (max-width: $mobile) {
   .container {
     width: 100vw;
+    height: 100vh;
     h1 {
       font-size: 2rem;
       text-align: center;
@@ -57,9 +58,7 @@ $desktop: 1280px;
         height: 0rem;
         width: 1.5rem;
       }
-      .two{
-          @extend .one;
-      }
+      
     }
   }
 }

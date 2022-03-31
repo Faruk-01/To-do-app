@@ -25,11 +25,12 @@
   align-items: center;
   height: 100vh;
   width: 60vw;
-  margin: 0.5rem auto;
+  margin: 0 auto;
   border: 5px solid yellow;
   border-radius: 0.2rem;
   position: relative;
   background-color: pink;
+  overflow-y: hidden;
 }
 
 .container h1 {
