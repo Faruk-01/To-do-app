@@ -42,7 +42,7 @@
       font-size: 1.1rem;
       width: 85%;
     }
-    button {
+    .btn {
       margin-left: 5px;
       outline: none;
       padding: 2px;
@@ -93,14 +93,43 @@
       align-items: center;
       flex-direction: row;
       text-align: center;
-      
-      &:hover{
+
+      &:hover {
         background-color: rgb(213, 204, 204);
         opacity: 0.8;
         border: 1px solid black;
         border-radius: 0.5rem;
         padding: 0.4rem 0.4rem;
       }
+    }
+  }
+  #reset {
+    margin-left: 5px;
+    outline: none;
+    padding: 2px;
+    width: 15%;
+    text-align: center;
+    height: 8%;
+    background-color: #06f;
+    border: 2px solid #06f;
+    color: #fff;
+    cursor: pointer;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 5px;
+    font-weight: 600;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border-radius: 3px;
+    &:hover {
+      background-color: #3385ff;
+      border-color: #3385ff;
+      fill: #06f;
     }
   }
   .plus {

@@ -64,7 +64,7 @@
   width: 85%;
 }
 
-.container .inputs button {
+.container .inputs .btn {
   margin-left: 5px;
   outline: none;
   padding: 2px;
@@ -93,7 +93,7 @@
   border-radius: 3px;
 }
 
-.container .inputs button:hover {
+.container .inputs .btn:hover {
   background-color: #3385ff;
   border-color: #3385ff;
   fill: #06f;
@@ -148,6 +148,41 @@
   border: 1px solid black;
   border-radius: 0.5rem;
   padding: 0.4rem 0.4rem;
+}
+
+.container #reset {
+  margin-left: 5px;
+  outline: none;
+  padding: 2px;
+  width: 15%;
+  text-align: center;
+  height: 8%;
+  background-color: #06f;
+  border: 2px solid #06f;
+  color: #fff;
+  cursor: pointer;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 5px;
+  font-weight: 600;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  border-radius: 3px;
+}
+
+.container #reset:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
 }
 
 .container .plus {

@@ -46,6 +46,10 @@ btn.addEventListener("click", (e) => {
     list.appendChild(sublist);
 
     input.value = "";
+
+    document.getElementById("reset").addEventListener("click", (e) => {
+      list.removeChild(sublist);
+    });
   }
 });
 
@@ -80,6 +84,10 @@ input.addEventListener("keyup", (e) => {
       list.appendChild(sublist);
 
       input.value = "";
+
+      document.getElementById("reset").addEventListener("click", (e) => {
+        list.removeChild(sublist);
+      });
     }
   }
 });
