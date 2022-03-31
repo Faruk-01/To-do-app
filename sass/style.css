@@ -23,10 +23,10 @@
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  width: 50vw;
+  width: 60vw;
   margin: 0.5rem auto;
   border: 5px solid yellow;
-  border-radius: 0.1rem;
+  border-radius: 0.2rem;
   position: relative;
   background-color: pink;
 }
@@ -116,7 +116,7 @@
   border: 4px solid red;
   border-radius: 1rem;
   height: 95vh;
-  width: 45vw;
+  width: 55vw;
   margin: 10px 0;
   overflow: auto;
   background-color: white;
@@ -191,7 +191,7 @@
   display: inline-block;
   position: absolute;
   bottom: 0px;
-  right: -3.5rem;
+  left: 0px;
 }
 
 .container .plus:hover {
@@ -207,7 +207,7 @@
   border: 1.4px solid black;
   border-radius: 0;
   background-color: black;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .container .plus .one, .container .plus .two {
@@ -222,7 +222,7 @@
   right: 0px;
   left: 0px;
   background-color: gray;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .container .plus .two {

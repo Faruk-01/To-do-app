@@ -10,10 +10,13 @@ $desktop: 1280px;
 // Mobile
 @media screen and (max-width: $mobile) {
     .container{
-
+        width: 100vw;
         h1{
             font-size: 2rem;
             text-align: center;
+        }
+        ul{
+            width: 80vw;
         }
     }
 }
@@ -21,14 +24,33 @@ $desktop: 1280px;
 // Tablet
 @media screen and (max-width: $tablet) {
     
+    .container{
+        width: 90vw;
+      
+        ul{
+            width: 70vw;
+        }
+    }
 }
 
 // Laptop
 @media screen and (max-width: $laptop) {
-    
+    .container{
+        width: 80vw;
+      
+        ul{
+            width: 60vw;
+        }
+    }
 }
 
 // Desktop
 @media screen and (max-width: $desktop) {
-    
+    .container{
+        width: 70vw;
+      
+        ul{
+            width: 50vw;
+        }
+    }
 }

@@ -26,7 +26,7 @@
   width: 50vw;
   margin: 0.5rem auto;
   border: 5px solid yellow;
-  border-radius: 0.1rem;
+  border-radius: 0.2rem;
   position: relative;
   background-color: pink;
 }
@@ -54,20 +54,21 @@
           align-items: center;
   -webkit-transform: scale(0);
           transform: scale(0);
-  width: 45vw;
+  width: 30vw;
 }
 
 .container .inputs input {
   height: 35px;
   font-family: "Lato", sans-serif;
-  font-size: 25px;
+  font-size: 1.1rem;
+  width: 85%;
 }
 
-.container .inputs button {
+.container .inputs .btn {
   margin-left: 5px;
   outline: none;
   padding: 2px;
-  width: 55px;
+  width: 15%;
   text-align: center;
   height: 35px;
   background-color: #06f;
@@ -92,7 +93,7 @@
   border-radius: 3px;
 }
 
-.container .inputs button:hover {
+.container .inputs .btn:hover {
   background-color: #3385ff;
   border-color: #3385ff;
   fill: #06f;
@@ -117,15 +118,15 @@
   height: 95vh;
   width: 45vw;
   margin: 10px 0;
-  overflow-y: auto;
+  overflow: auto;
   background-color: white;
 }
 
 .container ul .p {
-  margin: 0.2rem 0.2rem 0.2rem 3.5rem;
+  margin: 0.2rem 0.2rem 0.2rem 4rem;
   list-style-type: decimal;
   font-family: "Lato", sans-serif;
-  font-size: 25px;
+  font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,6 +139,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  text-align: center;
+}
+
+.container ul .p:hover {
+  background-color: #d5cccc;
+  opacity: 0.8;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.4rem;
+}
+
+.container #reset {
+  margin-left: 5px;
+  outline: none;
+  padding: 2px;
+  width: 15%;
+  text-align: center;
+  height: 8%;
+  background-color: #06f;
+  border: 2px solid #06f;
+  color: #fff;
+  cursor: pointer;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 5px;
+  font-weight: 600;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  border-radius: 3px;
+}
+
+.container #reset:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
 }
 
 .container .plus {
@@ -146,7 +191,7 @@
   display: inline-block;
   position: absolute;
   bottom: 0px;
-  right: -3.5rem;
+  left: 0px;
 }
 
 .container .plus:hover {
@@ -162,7 +207,7 @@
   border: 1.4px solid black;
   border-radius: 0;
   background-color: black;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .container .plus .one, .container .plus .two {
@@ -177,7 +222,7 @@
   right: 0px;
   left: 0px;
   background-color: gray;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .container .plus .two {
@@ -186,9 +231,42 @@
 }
 
 @media screen and (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
   .container h1 {
     font-size: 2rem;
     text-align: center;
+  }
+  .container ul {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+  .container ul {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .container {
+    width: 80vw;
+  }
+  .container ul {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 70vw;
+  }
+  .container ul {
+    width: 50vw;
   }
 }
 /*# sourceMappingURL=rwd.css.map */
