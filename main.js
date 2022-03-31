@@ -3,6 +3,7 @@ const inputs = document.querySelector(".inputs");
 const input = document.querySelector("input");
 const btn = document.getElementById("btn");
 const list = document.querySelector("ul");
+const reset = document.getElementById('reset');
 
 plus.addEventListener("click", () => {
   plus.style.transform = "scale(0.8)";
@@ -48,8 +49,14 @@ btn.addEventListener("click", (e) => {
 
     input.value = "";
 
+    reset.addEventListener('click', (e) => {
+      list.removeChild(sublist);
+      reset.style.transform = "scale(0.85)";
+    })
+
     setInterval(function () {
       btn.style.transform = "scale(1)";
+      reset.style.transform = "scale(1)";
     }, 450);
   }
 });
@@ -86,9 +93,16 @@ input.addEventListener("keyup", (e) => {
 
       input.value = "";
 
+      reset.addEventListener('click', (e) => {
+        list.removeChild(sublist);
+        reset.style.transform = "scale(0.85)";
+      })
+  
       setInterval(function () {
         btn.style.transform = "scale(1)";
+        reset.style.transform = "scale(1)";
       }, 450);
     }
   }
 });
+
